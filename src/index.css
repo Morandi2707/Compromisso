@@ -2,9 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 
-{
-.classe-incompleta  /* ❌ Faltou abrir chaves { */
-propriedade: valor; }
-.classe-correta { /* ✅ Formato correto */
-propriedade: valor;
-}
+
