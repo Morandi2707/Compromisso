@@ -2,16 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Garante que o background cubra toda a tela */
-.min-h-screen {
-    min-height: 100vh;
-  }
-  
-  /* Melhora a legibilidade do conteúdo */
-  .bg-white/90 {
-    background-color: rgba(255, 255, 255, 0.93) !important;
-  }
-  
-  .backdrop-blur-sm {
-    backdrop-filter: blur(6px);
-  }
+.classe-incompleta  /* ❌ Faltou abrir chaves { */
+propriedade: valor;
+
+.classe-correta { /* ✅ Formato correto */
+propriedade: valor;
+}
