@@ -86,7 +86,7 @@ function App() {
   const getTotalGuests = () => guestList.reduce((total, guest) => total + guest.guests, 0);
 
   const backgroundStyle = {
-    backgroundImage: `url('/image/1920x1080 BNG WALLPAPER4k.jpg'), linear-gradient(${BLUE}, ${BLUE})`,
+    backgroundImage: `url('/image/1920x1080 BNG WALLPAPER4k.webp')`, 
     backgroundSize: 'cover',
     backgroundPosition: 'center',
   };
