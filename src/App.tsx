@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { PartyPopper, Calendar, Users, MapPin, Lock, Trash2 } from 'lucide-react';
 import { db, collection, doc, setDoc, deleteDoc, onSnapshot } from './firebaseConfig';
-import type { QuerySnapshot, DocumentData } from 'firebase/firestore';
+import type { QuerySnapshot,  } from 'firebase/firestore';
 
 // Cores principais
 const BLUE = '#032F70';
@@ -30,7 +30,7 @@ function App() {
   useEffect(() => {
     const unsubscribe = onSnapshot(
       collection(db, 'Convidados'),
-      (snapshot: QuerySnapshot<DocumentData>) => {
+      (snapshot: QuerySnapshot) => {
         const guestsData = snapshot.docs.map((doc) => ({
           id: doc.id,
           ...doc.data(),
